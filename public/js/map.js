@@ -1,5 +1,5 @@
-maptilersdk.config.apiKey = mapKey
-;
+
+maptilersdk.config.apiKey = mapKey;
       const map = new maptilersdk.Map({
         container: 'map', // container's id or the HTML element to render the map
         style: "hybrid",
