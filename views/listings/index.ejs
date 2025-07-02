@@ -1,102 +1,17 @@
 <% layout("/layouts/boilerplate") %>
 
-<nav class="navbar bg-body-tertiary fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Offcanvas navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex mt-3" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</nav>
-   
-    <div id="filters">
-        <div class="filter">
-           <div><i class="fa-solid fa-fire "></i></div>
-            <p>Tranding</p>
-        </div>
-        <div class="filter">
-           <div><i class="fa-solid fa-bed"></i></div>
-            <p>Room</p>
-        </div>
-        <div class="filter">
-           <div><i class="fa-solid fa-city"></i></div>
-            <p>Iconic Cities</p>
-        </div>
-        <div class="filter">
-           <div><i class="fa-solid fa-mountain-sun"></i></div>
-            <p>Mountains</p>
-        </div>
-        <div class="filter">
-           <div><i class="fa-brands fa-fort-awesome"></i></div>
-            <p>Castles</p>
-        </div>
-        <div class="filter">
-           <div><i class="fa-solid fa-person-swimming"></i></div>
-            <p>Amazing Pools</p>
-        </div>
-        <div class="filter">
-           <div><i class="fa-solid fa-campground"></i></div>
-            <p>Camping</p>
-        </div>
-        <div class="filter">
-           <div><i class="fa-solid fa-snowflake"></i></div>
-            <p>Artic</p>
-        </div>
-        <div class="tax-switch">
-            <div class="form-check form-switch form-check-reverse">
-                <input class="form-check-input" type="checkbox" role="switch" id="switchCheckReverse">
-                <label class="form-check-label" for="switchCheckReverse">Destination Price with Tax</label>
-            </div>
-        </div>
-  </div>
-
-    <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 g-4 bg-img">
+    <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 g-4 bg-img mt-3">
          <% for(let listing of allListings)  { %>
             <a href="/listings/<%= listing._id %>" class="show-info">
-                <div class="card listing-card">
+                <div class="card listing-card index-card">
                  <img src="<%= listing.image.url %>" class="card-img-top" alt="listing_image" style="height: 20rem">
                     <div class="card-img-overlay"></div>
                     <div class="card-body">
                         <p class="card-text"><b><%= listing.title %></b></p>
                         <p class="card-text">&#x20B9;<%=listing.price.toLocaleString("en-IN")%>/night
-                         &nbsp;&nbsp;<i class="tax-info">+18% GST</i></p>
                     </div>
                 </div>
                  <% } %>  
             </a> 
     </div>
-    <script src="/script.js"> </script>
 
