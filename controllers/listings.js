@@ -74,7 +74,12 @@ module.exports.destroyListing = async (req ,res ,next) =>{
 
 module.exports.search =async(req ,res ,next) => {
     let {search} = req.query;
-    const listing = await Listing.findOne({title: search});
+    const listing = await Listing.findOne({title: search})
+    .populate( {path :"reviews" , populate : {
+        path : "author" ,
+      },
+    })
+    .populate("owner");
     if(!listing) {
         req.flash("error", "Listing not found");
         return res.redirect("/listings");
