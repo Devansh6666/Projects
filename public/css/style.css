@@ -148,35 +148,34 @@ body {
     margin-top: 1rem;
     height:50vh ;
     width: 100%;
+    border-radius: 2rem;
+    /* padding-right: 10px; */
 }
 
 .btns {
     display: flex;
 }
-.show-card{
-    padding-left: 0;
-    padding-right: 0;
-} 
 
 /* Map  */
 #map {
     height: 400px;
-    
-    border-radius: 10px;
+    border-radius: 15px;
+}
+.map-show{
+    margin-top: 1rem;
 }
 
 
 
 /* Review */
 .review-body {
-    padding: 1rem;
     border: #ebebeb solid 2px;
     border-radius: 20px;
     background-color: aliceblue;
+    padding: 1rem;
 }
 .review-body:hover {
     background-color: #f0f0f0;
-    transform: scale(1.1);
 }
 
 /* Login , Signup , New listing */
