@@ -8,7 +8,6 @@ body {
 
 .container {
         flex: 1;
-        margin-bottom: 0.5rem;
         padding-right: 20px;
         padding-left: 10px;
         border-radius: 20px;
@@ -144,12 +143,14 @@ body {
 }
 
 /* Show Page */
+.xyz {
+    padding-right: 20px;
+}
 .show-img{
     margin-top: 1rem;
     height:50vh ;
     width: 100%;
     border-radius: 2rem;
-    /* padding-right: 10px; */
 }
 
 .btns {
@@ -188,6 +189,7 @@ body {
 .new-show {
     padding-left: 20px;
 }
+
 
 
 

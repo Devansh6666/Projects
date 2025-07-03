@@ -2,8 +2,8 @@
 <script>
     let mapKey = "<%=process.env.MAP_API_KEY%>";
 </script>
-<div class="row ">
-        <div class="col-11 mt-2 ms-3" >
+<div class="row xyz">
+        <div class=" col-11 mt-3 ms-3" >
             <h3> <%= listing.title %> </h3>
         </div>
         <div class="card show-card listing-card" >
@@ -31,7 +31,7 @@
     <% } %>
     
     
-    <div class="mt-2 mb-3 ms-3" >
+    <div class=" mt-2 mb-3 ms-3" >
         <% if(curUser) { %>
             <hr/>
         <h4> Leave A Review</h4>
@@ -69,7 +69,7 @@
         <h4> All Review </h4>
         <div class="row">
             <% for(review of listing.reviews) { %>
-            <div class="card col-lg-5 col-sm-7 ms-2 mt-3 mb-2 review-body">
+            <div class="card col-lg-5 ms-2 mt-3 mb-2 review-body">
                 <div class="card-body">
                     <h5 class="card-title mt-2">@<%=review.author.username %></h5>
                     <p class="starability-result card-text" data-rating="<%= review.rating %>"></p>
@@ -86,7 +86,7 @@
     </div>
 
     
-    <div class="map-show mt-2 mb-3" >
+    <div class="map-show mt-2 mb-3 ms-2" >
         <h3>Search Your Destination Location here, Now </h3>
         <div id="map"> </div>
         <script src="/map.js"></script>
