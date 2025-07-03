@@ -10,31 +10,32 @@
 
             <img src="<%=listing.image.url%>" class="card-img-top show-img" alt="listing_image">
 
-            <div class="card-body">
+            <div class="card-body review-info">
                 <p class="card-text">
                     Created By <i><%= listing.owner.username %></i><br> 
-                    <%= listing.description %> <br/>
-                    &#x20B9;<%=listing.price.toLocaleString("en-IN")%> <br/>
-                    <%= listing.location %> </br>
-                    <%= listing.country %></p>
+                    <p><b>Description:</b><br/> <%= listing.description %> <br/></p>
+                    <p><b>Price:</b> &#x20B9;<%=listing.price.toLocaleString("en-IN")%> <br/></p>
+                    <p><b>Location: </b><%= listing.location %></p>
+                    <p><b>Country: </b><%= listing.country %></p></p>
+                     <% if(curUser && curUser._id.equals(listing.owner._id)) { %>
+                          <div class="btns mb-2">
+                              <a href="/listings/<%= listing._id%>/edit" class="btn btn-dark  edit-btn"> Edit </a>
+
+
+                              <form method="post" action="/listings/<%= listing._id %>?_method=DELETE">
+                               <button class="btn btn-dark  offset-4 "> Delete </button>
+                              </form>
+                            </div>
+                     <% } %>
             </div>
        </div>
-    <% if(curUser && curUser._id.equals(listing.owner._id)) { %>
-        <div class="btns mb-2">
-            <a href="/listings/<%= listing._id%>/edit" class="btn btn-dark  edit-btn"> Edit </a>
-
-
-            <form method="post" action="/listings/<%= listing._id %>?_method=DELETE">
-                <button class="btn btn-dark  offset-4 "> Delete </button>
-            </form>
-        </div>
-    <% } %>
+   
     
     
     <div class=" mt-2 mb-3 ms-3" >
         <% if(curUser) { %>
-            <hr/>
-        <h4> Leave A Review</h4>
+        <hr/>
+        <h4 class="mt-2"> Leave A Review</h4>
         <form method="POST" action="/listings/<%=listing.id%>/reviews"  class="needs-validation" novalidate>
             <div class="mb-2 mt-3">
                     <label for="rating" class="form-label"> Rating</label>
