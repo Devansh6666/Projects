@@ -2,9 +2,9 @@
    "engines": {
       "node": "22.15.0"
    },
-   "name": "majorproject",
+   "name": "Homivio",
    "version": "1.0.0",
-   "main": "index.js",
+   "main": "app.js",
    "scripts": {
       "build  ": "set NODE_ENV=production & next built"
    },
