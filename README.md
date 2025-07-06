@@ -51,15 +51,15 @@ npm install
 <p>3. Create (.env) File for API and API keys with These parameters Explain with Example :</p>
 
 ```
-CLOUDE_NAME=dc0sr2oh 
+CLOUDE_NAME= 
 
-CLOUDE_API_KEY=79248874262546 
+CLOUDE_API_KEY=
 
-CLOUDE_API_SECRET=wj-iedfRjOskXXHkSvAIoA8SlQ 
+CLOUDE_API_SECRET=
 
-MAP_API_KEY=X8Iv58AkXAel4mbBAoT   
+MAP_API_KEY=
 
-ATLASDB_URL=mongodb+srv://devanshchoudhary50:W4QS2Jb32uIwwajz@cluste0.yt75ic1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0 
+ATLASDB_URL= 
 ```
 
 <p>4. Now you run in Local Machine with Nodemon server and Visit in local server :</p>
