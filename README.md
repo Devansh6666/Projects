@@ -55,7 +55,12 @@ nodemon app.js
 
 Technologies used in the project:
 
-*   👨‍💻 Frontend : HTML5 – Markup structure CSS3 – Styling and layout JavaScript (ES6+) – Core client-side scripting Bootstrap – Responsive design components EJS – Templating engine for dynamic pages.
+*   👨‍💻 Frontend :<ul><li>HTML5 – Markup structure</li>
+                     <li>CSS3 – Styling and layout</li>
+                     <li>JavaScript (ES6+) – Core client-side scripting</li>
+                     <li>Bootstrap – Responsive design components</li>
+                     <li>EJS – Templating engine for dynamic pages</li>
+                 </ul>
 *   🌐 Backend : Node.js – JavaScript runtime environment Express.js – Web framework for building REST APIs MVC Architecture – Structured codebase and separation of concerns.
 *   🗃️ Database : MongoDB – NoSQL database for flexible scalable data.
 *   🔗 API & Integration : RESTful APIs – Standard API architecture for data flow Maptiler API – Display property locations (optional) Cloudinary – Image uploads
