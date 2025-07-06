@@ -18,12 +18,12 @@
 
 Here're some of the project's best features:
 
-*   ✅ User Authentication  <ul><li>Register/Login (Tenants & Owners)</li>
+*   ✅ User Authentication  <ul><li>Signup/Login (Tenants & Owners)</li>
                      <li>Password hashing & validation</li>
                      <li>Session/token-based authentication</li>
                  </ul>
 *   🏘️ Property <ul><li>Listings Add/Edit/Delete</li>
-                     <li>property by owner Upload images rent amenities description etc.</li>
+                     <li>Property by Owner Upload image rent amenities description etc.</li>
                  </ul>
   
 *   📍 Map Integration And ✍️ Reviews and Ratings  <ul><li>Display property locations using Maptiler</li>
@@ -49,7 +49,15 @@ npm install
 <p>3. Create (.env) File for API and API keys with These parameters Explain with Example :</p>
 
 ```
-CLOUDE_NAME=dc0sr2oh CLOUDE_API_KEY=79248874262546 CLOUDE_API_SECRET=wj-iedfRjOskXXHkSvAIoA8SlQ MAP_API_KEY=X8Iv58AkXAel4mbBAoT   ATLASDB_URL=mongodb+srv://devanshchoudhary50:W4QS2Jb32uIwwajz@cluste0.yt75ic1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0 
+CLOUDE_NAME=dc0sr2oh 
+
+CLOUDE_API_KEY=79248874262546 
+
+CLOUDE_API_SECRET=wj-iedfRjOskXXHkSvAIoA8SlQ 
+
+MAP_API_KEY=X8Iv58AkXAel4mbBAoT   
+
+ATLASDB_URL=mongodb+srv://devanshchoudhary50:W4QS2Jb32uIwwajz@cluste0.yt75ic1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0 
 ```
 
 <p>4. Now you run in Local Machine with Nodemon server and Visit in local server :</p>
