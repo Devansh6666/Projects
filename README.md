@@ -82,7 +82,6 @@ Technologies used in the project:
                  </ul>
 *   🌐 Backend  <ul><li>Node.js – JavaScript runtime environment</li>
                      <li>Express.js – Web framework for building REST APIs</li>
-                     <li>JavaScript (ES6+) – Core client-side scripting</li>
                      <li>MVC Architecture – Structured codebase and separation of concerns</li>
                  </ul>
                  
