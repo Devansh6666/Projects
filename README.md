@@ -38,6 +38,8 @@ Here're some of the project's best features:
 
 ```
 git clone https://github.com/codedbydevansh/Projects.git
+
+cd Projects
 ```
 
 <p>2. Node_Modules Install :</p>
