@@ -18,10 +18,19 @@
 
 Here're some of the project's best features:
 
-*   ✅ User Authentication : Register/Login (Tenants & Owners) Password hashing & validation Session/token-based authentication.
-*   🏘️ Property : Listings Add/Edit/Delete property by owner Upload images rent amenities description etc.
-*   📍 Map Integration : Display property locations using Maptiler.
-*   ✍️ Reviews and Ratings : Post and view property reviews.
+*   ✅ User Authentication  <ul><li>Register/Login (Tenants & Owners)</li>
+                     <li>Password hashing & validation</li>
+                     <li>Session/token-based authentication</li>
+                 </ul>
+*   🏘️ Property <ul><li>Listings Add/Edit/Delete</li>
+                     <li>property by owner Upload images rent amenities description etc.</li>
+                 </ul>
+  
+*   📍 Map Integration And ✍️ Reviews and Ratings  <ul><li>Display property locations using Maptiler</li>
+                     <li>Post and view property reviews</li>
+                 </ul>
+
+ 
 
 <h2>🛠️ Installation Steps:</h2>
 
@@ -55,14 +64,30 @@ nodemon app.js
 
 Technologies used in the project:
 
-*   👨‍💻 Frontend :<ul><li>HTML5 – Markup structure</li>
+*   👨‍💻 Frontend <ul><li>HTML5 – Markup structure</li>
                      <li>CSS3 – Styling and layout</li>
                      <li>JavaScript (ES6+) – Core client-side scripting</li>
                      <li>Bootstrap – Responsive design components</li>
                      <li>EJS – Templating engine for dynamic pages</li>
                  </ul>
-*   🌐 Backend : Node.js – JavaScript runtime environment Express.js – Web framework for building REST APIs MVC Architecture – Structured codebase and separation of concerns.
-*   🗃️ Database : MongoDB – NoSQL database for flexible scalable data.
-*   🔗 API & Integration : RESTful APIs – Standard API architecture for data flow Maptiler API – Display property locations (optional) Cloudinary – Image uploads
-*   🔒 Authentication & Security : Sessions – Authentication tokens Express Validator – Security headers & form validation Passport API.
-*   🧪 Tools & DevOps : Git & GitHub – Version control and collaboration Hoppscotch – API testing VS Code – Code editor Nodemon – Auto-reloading during development Render – Deployment platform.
+*   🌐 Backend  <ul><li>Node.js – JavaScript runtime environment</li>
+                     <li>Express.js – Web framework for building REST APIs</li>
+                     <li>JavaScript (ES6+) – Core client-side scripting</li>
+                     <li>MVC Architecture – Structured codebase and separation of concerns</li>
+                 </ul>
+                 
+*   🗃️ Database And 🔗 API & Integration <ul><li>MongoDB – NoSQL database for flexible , scalable data</li>
+                                                <li>RESTful APIs – Standard API architecture for data flow</li>
+                                                <li>Maptiler API – Display property locations</li>
+                                                <li>Cloudinary – Image uploads</li>
+                                                <li>Passport API</li>
+                                            </ul> 
+*   🔒 Authentication & Security  <ul><li>Sessions – Authentication tokens</li>
+                                                <li>Express Validator – Security headers & form validation</li>
+                                            </ul>  
+*   🧪 Tools & DevOps  <ul><li>Git & GitHub – Version control and collaboration</li>
+                     <li>Hoppscotch – API testing</li>
+                     <li>VS Code – Code editor</li>
+                     <li>Nodemon – Auto-reloading during development</li>
+                     <li>Render – Deployment platform</li>
+                 </ul>
